@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar{
+    background-color: #B7B1F2;
+    position: sticky
+    
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 15px;
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.logo  {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Honk", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;
+  }
+
+.nav-links a{
+    text-decoration: none;
+}
+
+.nav-links li {
+    list-style: none; /* Ensure bullets are removed */
+}
+
+
+
+@media screen and (max-width: 600px) {
+    
+}
