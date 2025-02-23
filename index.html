@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sphere Of Desnity</title>
+
+    <link rel="icon" type="image/png" href="assets/icon.png" />
+    <title>Sphere Of Destiny</title>
 
     <!-- Link CSS -->
     <!-- <link CSS File -->
@@ -15,7 +17,12 @@
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Honk&family=Oswald:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shafarik&family=Sigmar&family=Tiny5&display=swap"
+      rel="stylesheet" />
     <!-- Link JS -->
     <script src="js/script.js" defer></script>
   </head>
@@ -28,11 +35,10 @@
           <ul class="nav-links">
             <li><a href="#Home">Home</a></li>
             <li><a href="#Gameplay">Gameplay</a></li>
-            <li><a href="#About">About</a></li>
+            <li><a href="#Story">Story</a></li>
             <li><a href="#Features">Features</a></li>
             <li><a href="#Download">Download</a></li>
-            <li><a href="#Aboutus">About Us</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Credits">Credits</a></li>
           </ul>
         </div>
       </nav>
@@ -45,82 +51,118 @@
           <p>
             Game petualangan epik yang membawa Anda ke dunia penuh tantangan.
           </p>
+          <img src="assets/icon.png" alt="Logo Sphere of Destiny" />
           <a href="#Download" class="btn">Unduh Sekarang</a>
         </article>
         <article id="Gameplay">
           <h2>Gameplay</h2>
           <div class="Gameplay-content">
             <p>
-              Sphere of Destiny adalah sebuah Game Arcade bertemakan petualangan
-              menggunakan bubble dengan sentuhan 2D platform. Dalam permainan
-              ini pemain akan berperan sebagai karakter Bob, seorang manusia
-              terjebak di suatu tempat entah berantah untuk kembali ke tempat
-              semula dan mendapatkan kekuatan bubble.
+              Dalam <b>Sphere of Destiny</b> pemain harus mengendalikan Bob
+              sekaligus gelembung yang menjadi alat utama untuk melewati
+              berbagai rintangan. Bob tidak bisa melompat seperti karakter
+              platformer pada umumnya, sehingga pemain harus meniup dan
+              mengontrol gelembung sebagai pijakan, pelindung, atau alat untuk
+              menghindari jebakan. Dengan mengatur waktu dan arah dengan tepat,
+              pemain dapat melintasi platform, melewati rintangan, dan mencapai
+              garis akhir di setiap level. Seiring berjalannya permainan,
+              berbagai jenis gelembung dengan efek unik, seperti melambung lebih
+              tinggi atau menempel di dinding, akan terbuka, membuat gameplay
+              semakin dinamis dan menantang.
             </p>
             <aside>
               <button onclick="prevSlide()">&#10094;</button>
-              
-              <img src="assets/gameplay-1.png" alt="Screenshoort Gameplay 1"/>
+
+              <img
+                id="gameplay-image"
+                src="assets/gameplay-1.png"
+                alt="Screenshot Gameplay" />
 
               <button onclick="nextSlide()">&#10095;</button>
             </aside>
           </div>
         </article>
-        <article id="About">
-          <h2>About Game</h2>
+        <article id="Story">
+          <h2>Story of The Game</h2>
           <p>
-            Bob, seorang anak yang penuh rasa ingin tahu, tiba-tiba terpisah
-            dari teman-temannya dan mendapati dirinya berada di dunia yang sama
-            sekali asing. Semua ini bermula saat ia berjalan bersama
-            teman-temannya menuju tempat bermain favorit mereka. Di tengah
-            perjalanan, hal aneh terjadi: jalan yang baru saja mereka lalui
-            menghilang, digantikan oleh batas dimensi misterius yang belum
-            pernah Bob lihat sebelumnya.
+            Bob, seorang anak penuh rasa ingin tahu, tiba-tiba terpisah dari
+            teman-temannya dan mendapati dirinya di dunia asing yang misterius.
+            Saat berjalan menuju tempat bermain favorit mereka, jalan yang baru
+            saja ia lalui menghilang, tergantikan oleh batas dimensi aneh yang
+            belum pernah ia lihat sebelumnya. Didorong rasa penasaran, Bob
+            melangkah masuk dan menemukan zat cair aneh yang dapat ditiup
+            menjadi gelembung. Saat ia mencoba meniupnya, gelembung itu ternyata
+            memiliki kekuatan luar biasa—membawa Bob dalam petualangan epik
+            melintasi berbagai dimensi penuh tantangan. Sepanjang perjalanan,
+            Bob harus mengendalikan gelembung ajaib untuk melewati rintangan,
+            bertemu makhluk asing, menjelajahi dunia unik, dan menjalin
+            persahabatan dengan mereka yang membantunya. Setiap langkah membawa
+            Bob lebih dekat pada jawabannya: bisakah ia kembali ke rumah,
+            ataukah takdirnya berubah di dunia dimensi gelembung ini?
             <br /><br />
-            Didorong oleh rasa penasaran, Bob memutuskan untuk melangkah masuk
-            ke dunia asing itu. Di sana, ia menemukan zat aneh berbentuk cairan
-            yang dapat ditiup menjadi gelembung. Terbiasa bermain dengan
-            gelembung di dunianya, Bob mencoba meniup gelembung raksasa dari zat
-            tersebut. Tanpa diduga, gelembung itu bukanlah gelembung
-            biasa—gelembung itu memiliki kekuatan luar biasa yang menjadi awal
-            dari petualangan panjang Bob.
-            <br /><br />
-            Dengan bantuan gelembung ajaib yang ia tiup, Bob memulai perjalanan
-            epik melintasi berbagai dimensi penuh rintangan. Dalam
-            perjalanannya, ia menghadapi makhluk-makhluk asing, menemukan
-            tempat-tempat unik yang menakjubkan, serta menjalin persahabatan
-            dengan beberapa makhluk yang membantunya mengatasi tantangan.
-            <br /><br />
-            Bob bertekad untuk kembali ke dunianya, melewati setiap rintangan
-            yang menghadang. Petualangan ini menghadirkan momen-momen penuh
-            keajaiban yang tak terlupakan. Apakah Bob berhasil kembali ke rumah?
-            Atau apakah ia menemukan tujuan baru di dunia dimensi gelembung ini?
-            <br /><br />
+          </p>
+          <span>
             Bersiaplah untuk menjelajahi dunia penuh imajinasi, keajaiban, dan
             tantangan bersama Bob dalam "Sphere of Destiny"!
-          </p>
+          </span>
         </article>
         <article id="Features">
           <h2>Features</h2>
           <ul id="List-Features">
-            <li>Grafik yang menakjubkan dengan dunia yang luas</li>
+            <li>Grafik pixel sederhana yang memberikan pengalaman unik</li>
             <li>Gameplay yang mendalam dan menantang</li>
-            <li>Beragam karakter dan senjata unik</li>
-            <li>Mode multiplayer dan single-player</li>
+            <li>Alur cerita yang menarik dan menegangkan</li>
+            <li>Ringan untuk dimainkan</li>
           </ul>
         </article>
         <article id="Download">
-          <h2>Unduh Game</h2>
-          <p>Rasakan petualangan seru dengan mengunduh game sekarang!</p>
-          <a href="#" class="btn">Download untuk PC</a>
-          <a href="#" class="btn">Download untuk Android</a>
+          <h2>Download</h2>
+          <p>Rasakan petualangan seru dan mainkan sekarang!</p>
+          <a
+            href="https://ggjv4.s3.us-west-1.amazonaws.com/files/games/2025/833236/exec/sphereofdestiny_execute.zip?VersionId=vpmmjvidLx4.pMYFOWWoTEcP.tZLvrG3"
+            class="btn"
+            >Download untuk Windows
+          </a>
         </article>
-        <article class="Aboutus"></article>
-        <article class="Contact"></article>
+        <article id="Credits">
+          <h2>Credits</h2>
+          <p>
+            Terima kasih kepada semua pihak yang telah berkontribusi dalam
+            pengembangan <strong>Sphere of Destiny</strong>.
+          </p>
+          <section class="dev">
+            <h3>Pengembang</h3>
+            <ul>
+              <li><strong>Game Design and Writer:</strong> Abrar</li>
+              <li><strong>Environment Designer:</strong> Anas</li>
+              <li><strong>Programmer:</strong> Naufal</li>
+              <li><strong>Artist:</strong> Fathony</li>
+              <li><strong>Sound Designer:</strong> Azwin</li>
+            </ul>
+          </section>
+          <section class="software">
+            <h3>Tools & Resources</h3>
+            <ul>
+              <li><strong>Game Engine:</strong> Godot Engine</li>
+              <li><strong>Art & Assets:</strong> Adobe Illustrator</li>
+              <li><strong>Audio & Music:</strong> Audacity</li>
+            </ul>
+          </section>
+        </article>
       </div>
     </main>
-    <footer class="footer">
-      <p>Copyright &copy; 2022 Sphere Of Desnity</p>
+
+    <footer class="Footer">
+      <div>
+        <ul>
+          <li><p>My social media :</p></li>
+          <li><a href="https://twitter.com/julesforrest">Twitter</a></li>
+          <li><a href="https://codepen.io/julesforrest">Codepen</a></li>
+          <li><a href="mailto:julesforrest@gmail.com">Email</a></li>
+          <li><a href="https://dribbble.com/julesforrest">Dribbble</a></li>
+          <li><a href="https://github.com/julesforrest">Github</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
