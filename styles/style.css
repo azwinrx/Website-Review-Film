@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -84,10 +85,41 @@ section {
     padding: 40px;
 }
 
-#Gameplay{
-    display: flex;}
+.Gameplay-content {
+    display: flex;
+    gap: 20px; /* Memberi jarak antara teks dan gambar */
+}
+
+.Gameplay-content p {
+    width: 50%;
+    text-align: justify;
+}
+
+.Gameplay-content aside {
+    width: 50%; /* Kontainer gambar mengambil 50% lebar */
+    display: flex;
+    justify-content: center; 
+    align-items: center; /* Memastikan gambar ada di kanan */
+}
+
+.Gameplay-content aside img {
+    width: 100%; /* Atur ukuran gambar agar proporsional */
+    max-width: 360px;
+    height: auto;
+    border-radius: 10px; /* Opsional, untuk estetika */
+}
+
+.Gameplay-content aside button {
+    border-radius: 5px;
+    margin: 20px;
+    height: 30px;
+    width: 30px;
+}
 
 
+#About p{
+    text-align: justify;
+}
 #List-Features{
     list-style: none;
 }
