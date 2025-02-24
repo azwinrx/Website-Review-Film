@@ -56,6 +56,10 @@ section {
     font-style: normal;
   }
 
+.hamburger{
+    opacity: 0;
+}
+
 .nav-links a{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
@@ -126,13 +130,17 @@ body{
 }
 
 .Gameplay-content aside img {
-    width: 100%; /* Atur ukuran gambar agar proporsional */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%; /* Atur ukuran gambar agar proporsional */
     max-width: 360px;
     height: auto;
     border-radius: 10px; /* Opsional, untuk estetika */
 }
 
 .Gameplay-content aside button {
+    padding: 5px;
     border-radius: 5px;
     margin: 20px;
     height: 30px;
@@ -173,7 +181,7 @@ h2 {
     display: inline-block;
     background: #00c3ff;
     color: #121212;
-    padding: 12px 20px;
+    padding: 20px;
     margin-top: 15px;
     text-decoration: none;
     font-weight: bold;
@@ -247,5 +255,86 @@ h2 {
           transform: rotate(-15deg);
         }
       }
+
+      .Footer-bottom{
+        display: flex;
+        align-items:center;
+        justify-content: end;
+
+        p{
+            font-size: 15px;
+            font-family: "Oswald", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            margin-right: 10px;
+        }
+      }
       
 }
+
+@media screen and (max-width: 1000px) {
+
+     .nav-bar {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        padding: 10px 0;
+        background-color: #1E1E1E;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        opacity: 100%;
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+    }
+
+    .Gameplay-content {
+        flex-direction: column; /* Mengubah tata letak menjadi vertikal */
+        text-align: center; /* Menyesuaikan teks agar rapi */
+    }
+
+    .Gameplay-content p {
+        width: 100%; /* Teks memenuhi lebar */
+    }
+
+    .Gameplay-content aside {
+        width: 100%; /* Gambar memenuhi lebar */
+        margin-top: 20px; /* Beri jarak antara teks dan gambar */
+    }
+
+    .Gameplay-content aside img {
+        width: 80%; /* Sesuaikan ukuran gambar */
+        max-width: 300px; /* Batasi ukuran gambar */
+    }
+}
+
+

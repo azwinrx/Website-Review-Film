@@ -1,18 +1,36 @@
+//Smooth Scroll
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', function(e) {
-        e.preventDefault(); // Mencegah scroll default
+        e.preventDefault();
 
-        const targetId = this.getAttribute('href'); // Ambil ID tujuan
+        const targetId = this.getAttribute('href');
         const targetElement = document.querySelector(targetId);
 
         if (targetElement) {
-            const offset = window.innerHeight / 2 - targetElement.offsetHeight / 2; // Hitung posisi tengah
+            const offset = window.innerHeight / 2 - targetElement.offsetHeight / 2;
             window.scrollTo({
                 top: targetElement.offsetTop - offset,
                 behavior: 'smooth'
             });
         }
     });
+});
+
+document.querySelectorAll('#Home a').forEach(link => {
+  link.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+          const offset = window.innerHeight / 2 - targetElement.offsetHeight / 2;
+          window.scrollTo({
+              top: targetElement.offsetTop - offset,
+              behavior: 'smooth'
+          });
+      }
+  });
 });
 
 //Slide Image Gameplay
@@ -49,3 +67,8 @@ const images = [
     showSlide(currentIndex - 1);
   }
   
+  //Hamburger Menu
+  function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('show');
+}
+
