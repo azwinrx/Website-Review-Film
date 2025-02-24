@@ -257,16 +257,15 @@ h2 {
       }
 
       .Footer-bottom{
+        background-color: #121212;
         display: flex;
         align-items:center;
         justify-content: end;
 
         p{
+            padding: 10px;
             font-size: 15px;
-            font-family: "Oswald", serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
+            font-family: Menlo, monospace;
             margin-right: 10px;
         }
       }
@@ -303,6 +302,11 @@ h2 {
         width: 100%;
         padding: 10px 0;
         background-color: #1E1E1E;
+    }
+
+    .nav-links :hover{
+        color: #00c3ff;
+
     }
 
     .nav-links.show {
