@@ -43,6 +43,11 @@ section {
     font-style: normal;
 }
 
+.nav-links :hover{
+    color: #00c3ff;
+
+}
+
 .nav-links li a{
     color: white;
 }
@@ -102,7 +107,7 @@ body{
 }
 
 #Gameplay, #Story, #Features, #Download, #Contact, #Credits{
-    background: #1e1e1e;
+    background-color: #1e1e1e;
     margin: 20px 0;
     border-radius: 10px;
     padding: 40px;
@@ -339,6 +344,90 @@ h2 {
         width: 80%; /* Sesuaikan ukuran gambar */
         max-width: 300px; /* Batasi ukuran gambar */
     }
+    @media screen and (max-width: 1000px) {
+
+        .nav-bar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0;
+        }
+    
+        .nav-items {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    
+        .logo {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+    
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            padding: 10px 0;
+            background-color: #1E1E1E;
+            text-align: center;
+        }
+    
+        .nav-links.show {
+            display: flex;
+        }
+    
+        .hamburger {
+            opacity: 100%;
+            display: block;
+            cursor: pointer;
+            font-size: 24px;
+            color: white;
+        }
+    
+        .Gameplay-content {
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+    
+        .Gameplay-content p {
+            width: 100%;
+            padding: 0 10px;
+        }
+    
+        .Gameplay-content aside {
+            width: 100%;
+            margin-top: 20px;
+        }
+    
+        .Gameplay-content aside img {
+            width: 80%;
+            max-width: 250px;
+        }
+    
+        .Footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+    
+        .Footer ul {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .Footer-bottom {
+            justify-content: center;
+        }
+    }
+    
 }
 
-
+@media screen and (max-width: 600px){
+    body{
+        margin-top:  10vh ;
+    }
+}
